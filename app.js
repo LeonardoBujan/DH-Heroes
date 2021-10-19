@@ -34,5 +34,19 @@ app.get("/clarke", (req, res)=>{
 app.get("/hamilton", (req, res)=>{
     const rutaHamilton = path.join(__dirname, "./views/hamilton.html");
     res.sendFile(rutaHamilton);
+});
 
-})
+app.get("/hopper", (req, res)=>{
+    const rutaHopper = path.join(__dirname, "./views/hopper.html");
+    res.sendFile(rutaHopper);
+});
+
+app.get("/lovelace", (req, res)=>{
+    const rutaLovelace = path.join(__dirname, "./views/lovelace.html");
+    res.sendFile(rutaLovelace);
+});
+
+app.get("/turing", (req, res)=>{
+    const rutaTuring = path.join(__dirname, "./views/turing.html");
+    res.sendFile(rutaTuring);
+});
